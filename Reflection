@@ -1,0 +1,12 @@
+During the process of establishing this website, I faced many difficulties and challenges.
+In the initial stage of dealing with HTML, CSS and JavaScript, I didn’t connect the external CSS files to HTML correctly. This made me feel really confused because although I changed the styles in the CSS file, 
+there seemed to be no changes on the web page. Finally, I realized that I had forgotten to link the CSS file in the HTML head section. Once I corrected this mistake, everything was as I expected.
+The biggest challenge in the process of building a website is how to express my ideas through code. 
+I often have creative ideas about the appearance or function of a page, but I don't know how to write the correct grammar to implement them. Through trial and error and continuous learning, I gradually overcame these difficulties.
+For example, I want to add the expand/hide function to some text parts. However, I don't know how to write it in JavaScript. 
+After searching online, reading tutorials and seeking help from AI tools, I finally understood how to use these functions. And then I tried to code. Finally, although I still experienced a lot of failure, 
+I got the thing I wanted. This experience taught me the importance of problem-solving, how to use developer tools, and the help of online resources.
+In addition, I have learned how to make my website more interactive by using the animation. Using methods such as "button" can effectively keep the connection between web pages and readers
+Establishing this website has taught me a lot. I have learned how to correct mistakes, such as linking CSS to HTML, 
+and how to make ideas into code. Some parts are difficult to make, such as hiding and showing text with JavaScript, but I solved this problem with the help of online tools and learning. I also learned to use animations and make websites responsive.
+This project helped me improve my coding skills and gave me more confidence.
