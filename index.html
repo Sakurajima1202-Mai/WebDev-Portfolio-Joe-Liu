@@ -75,5 +75,11 @@
     }, { once: true }); 
   </script>
   <button onclick="scrollToTop()" id="backToTopBtn" title="back to the top">↑</button>
+  <script>function scrollToTop() {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'  
+    });
+  }</script>
 </body>
 </html>
