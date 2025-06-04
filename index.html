@@ -73,7 +73,12 @@
       const audio = document.getElementById('bg-music');
       audio.play();
     }, { once: true }); 
-    <script src="javascript.js"></script>
+   <script> function scrollToTop() {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'  
+  });
+}</script>
   <button onclick="scrollToTop()" id="backToTopBtn" title="back to the top">↑</button>
 </body>
 </html>
