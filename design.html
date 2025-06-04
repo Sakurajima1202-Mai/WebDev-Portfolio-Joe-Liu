@@ -11,21 +11,22 @@
   <header>
     <nav>
       <h1>Joe's Web</h1>
-      <ul style="font-size: larger; list-style: none;">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="design.html">Design Thinking</a></li>
-        <li><a href="goals.html">UN Global Goals</a></li>
-        <li><a href="curtain.html">Behind the curtain</a></li>
-      </ul>
+      <div id="navigation-buttons">
+        <a href="index.html"><button>Homepage</button></a>
+        <a href="design.html"><button>Design Thinking</button></a>
+        <a href="goals.html"><button>UN Global Goals</button></a>
+        <a href="curtain.html"><button>Behind the curtain</button></a>
+        <a href="feedback.html"><button>Feedback</button></a>
+      </div>
+    <img src="Images/Photo1.jpg" alt="My wechat head portrait" />
     </nav>
   </header>
 
   <main>
     <section>
       <h2>Design Thinking</h2>
-      <div class="qa-container">
         <h1>Design Thinking:</h1>
-        <div class="qa">
+        <div class="qa-container">
           <div class="design">1. Emphasize</div>
           <div class="answer">
           <p>Before building my website, I observed many other people's websites and found that their websites had a common feature:<mark> they had interactive elements 
@@ -36,7 +37,7 @@
           </div>
         </div>
     
-        <div class="qa">
+        <div class="qa-container">
           <div class="design">2. Define</div>
           <div class="answer">I have clarified the purpose of the website: to introduce myself. 
                               Therefore, I need to build the website around this purpose.<br>
@@ -45,14 +46,14 @@
                               <img src="Images/NavBar.png" alt="NavBar" class="answer img"></div>
         </div>
     
-        <div class="qa">
+        <div class="qa-container">
           <div class="design">3. Ideate</div>
           <div class="answer">Next, I began to envision how my website should be created. 
             At this point, I didn't explicitly establish a structure. Instead, I remembered the necessary elements and then considered how to implement them. 
             Finally, I decided to use the<mark> button to switch pages</mark> and other methods to achieve the purpose of interactive elements.</div>
         </div>
     
-        <div class="qa">
+        <div class="qa-container">
           <div class="design">4. Prototype</div>
           <div class="answer">I roughly created the basic structure of css, three html (goals, index and design), and Javascript files.<br> 
             I also incorporated the button into the code
@@ -67,7 +68,7 @@
            <p>In addition, I added mant photos to make the page seems more <mark>USER-FRIENDLY</mark></p>
           </div>
 
-        <div class="qa">
+        <div class="qa-container">
           <div class="design">5. Test</div>
           <div class="answer">After completing these productions, I ran the program and asked my friends and classmates for suggestions. 
             After that, I improved the size and transparency of the font. Then, I added the <mark>background</mark> and <mark>animations</mark>. 
@@ -83,13 +84,14 @@
             <p>This piece of code defines the step-by-step change process of the animation</p>
           </div>
         </div>
-        <div class="qa">
+        <div class="qa-container">
           <div class="design">6. Accessibility Statement</div>
           <div class="answer">I tried my best to highlight the important parts and replaced the questions with pictures to achieve <mark>barrier-free reading</mark>
             <img src="Images/barrier.png" alt="barrier-free reading" class="answer image">
           </div>
       </div>
       <script src="Javascript.js"></script>
+      <button onclick="scrollToTop()" id="backToTopBtn" title="back to the top">↑</button>
     </section>
     </main>
     </body>

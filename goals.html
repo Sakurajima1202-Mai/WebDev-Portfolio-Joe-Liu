@@ -10,12 +10,14 @@
   <header>
     <nav>
       <h1>Joe's Web</h1>
-      <ul style="font-size: larger; list-style: none;">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="design.html">Design Thinking</a></li>
-        <li><a href="goals.html">UN Global Goals</a></li>
-        <li><a href="curtain.html">Behind the curtain</a></li>
-      </ul>
+      <div id="navigation-buttons">
+        <a href="index.html"><button>Homepage</button></a>
+        <a href="design.html"><button>Design Thinking</button></a>
+        <a href="goals.html"><button>UN Global Goals</button></a>
+        <a href="curtain.html"><button>Behind the curtain</button></a>
+        <a href="feedback.html"><button>Feedback</button></a>
+      </div>
+    <img src="Images/Photo1.jpg" alt="My wechat head portrait" />
     </nav>
   </header>
 
@@ -46,5 +48,7 @@
       </button>
     </p>
   </main>
+  <script src="Javascript.js"></script>
+  <button onclick="scrollToTop()" id="backToTopBtn" title="back to the top">↑</button>
 </body>
 </html>

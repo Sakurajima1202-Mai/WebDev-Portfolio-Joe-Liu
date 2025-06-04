@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>User Feedback</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <nav>
+        <h1>Joe's Web</h1>
+      <div id="navigation-buttons">
+        <a href="index.html"><button>Homepage</button></a>
+        <a href="design.html"><button>Design Thinking</button></a>
+        <a href="goals.html"><button>UN Global Goals</button></a>
+        <a href="curtain.html"><button>Behind the curtain</button></a>
+        <a href="feedback.html"><button>Feedback</button></a>
+      </div>
+      <img src="Images/Photo1.jpg" alt="My wechat head portrait" />
+      </nav>
+  </header>
+
+  <main>
+    <section id="feedback">
+      <h2>Hope Your Feedback!</h2>
+      <p>Please share your thoughts, suggestions, or report any issues below:</p>
+
+      <form id="feedback-form">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>  
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email"><br><br>
+
+        <label for="feedback">Your Feedback:</label><br>
+        <textarea id="message" name="message" rows="6" required></textarea><br><br>
+
+        <button type="submit">Submit Feedback</button>
+      </form>
+
+      <p id="feedback-thankyou" style="display:none; color: green; margin-top: 1em;">
+        Thank you for your feedback!
+      </p>
+    </section>
+    <script src="Javascript.js"></script>
+  </main>
+
+</body>
+</html>

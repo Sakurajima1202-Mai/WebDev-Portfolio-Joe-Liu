@@ -20,30 +20,6 @@
     }
   }
 
-  /*Define the navigation part*/
-  nav ul li a{
-      color: white;
-      text-decoration: none;
-      transition: color 0.3s ease;
-  }
-  
-  nav ul li a:hover {
-    font-size: larger;
-    color: #ffcc00;
-  }
-
-  nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 90%;
-    max-width: 1000px;
-    margin: auto;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: larger;
-  }
-
-
   /*Define my header file, which is on the top*/
   header {
     background-color: #333;
@@ -128,20 +104,45 @@
 
 
   /*Define the button which can bring us to other pages*/
+  #navigation-buttons {
+    display: flex;
+    gap: 12px;
+    margin-top: 10px;
+  }
+  
+  #navigation-buttons a {
+    text-decoration: none;
+  }
+  
   #navigation-buttons button {
-    font-size: 1rem;
-    padding: 10px 20px;
-    margin: 10px;
-    background-color: #007acc;
+    background-color: #1e1e1e;
     color: white;
-    border: none;
-    border-radius: 5px;
+    border: 2px solid #444;
+    padding: 10px 20px;
+    border-radius: 8px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    font-size: 16px;
+    transition: all 0.3s ease;
+  }
+  
+  #navigation-buttons button:hover {
+    background-color: #333;
+    border-color: #00e5ff;
+    color: #00e5ff;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 229, 255, 0.2);
   }
 
-  #navigation-buttons button:hover {
-    background-color: #005f99;
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: larger;
   }
 
   /*Define my photos of hobbies part*/
@@ -151,6 +152,38 @@
     height: auto;
     border-radius: 10px;
     margin-top: 10px;
+  }
+
+  .hobby-description {
+    background-color: #f0f8ff;
+    border-left: 5px solid blue;
+    padding: 15px 20px;
+    margin: 20px 0;
+    font-size: 1.1rem;
+    border-radius: 8px;
+    line-height: 1.6;
+    color:#333
+  }
+  /*Define the button which can help the user back to the top*/
+  #backToTopBtn {
+    display: none; 
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+    padding: 10px 15px;
+    border-radius: 10px;
+    transition: opacity 0.3s ease;
+  }
+  
+  #backToTopBtn:hover {
+    background-color: #555;
   }
 
 /*Global document*/
@@ -223,6 +256,53 @@
   }
 
 /*curtain.html*/
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: white; 
+  background-color: #121212; 
+}
+
+
+section.curtain {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+section.curtain h2 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+section.curtain p {
+  font-size: 16px;
+  color: #eeeeee;
+  margin-bottom: 1em;
+}
+
+section.curtain mark {
+  background-color: #2c2c2c;
+  padding: 2px 4px;
+  font-family: monospace;
+  color: #00e5ff;
+  border-radius: 4px;
+}
+
+.code-description {
+  background-color: black;
+  border-left: 5px solid blue;
+  padding: 15px 20px;
+  margin: 20px 0;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  line-height: 1.6;
+  color:#333
+}
+
 .curtain img {
   max-width: 100%;     
   width: 600px;

@@ -11,18 +11,20 @@
   <header>
     <nav>
       <h1>Joe's Web</h1>
-      <ul style="font-size: larger; list-style: none;">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="design.html">Design Thinking</a></li>
-        <li><a href="goals.html">UN Global Goals</a></li>
-        <li><a href="curtain.html">Behind the curtain</a></li>
-      </ul>
+      <div id="navigation-buttons">
+        <a href="index.html"><button>Homepage</button></a>
+        <a href="design.html"><button>Design Thinking</button></a>
+        <a href="goals.html"><button>UN Global Goals</button></a>
+        <a href="curtain.html"><button>Behind the curtain</button></a>
+        <a href="feedback.html"><button>Feedback</button></a>
+      </div>
+    <img src="Images/Photo1.jpg" alt="My wechat head portrait" />
     </nav>
   </header>
 
   <main>
     <section>
-        <h2 onmouseover="highlight(this)" onmouseout="removeHighlight(this)"> My Code</h2>
+        <h2> My Code</h2>
       <p>
         Click here to go to my repository and see the whole code👇
       </p>
@@ -32,15 +34,15 @@
     </section>
   
     <section class="curtain">
-        <h2 onmouseover="highlight(this)" onmouseout="removeHighlight(this)"> Challenges I Faced</h2>
-      <p>
+        <h2> Challenges I Faced</h2>
+      <p class="code-description">
         The most difficult coding challenge I encountered occurred in the part of design thinking. When I was coding, I found that 
         it was very difficult to achieve the effect of "expand/collapse". 
         I searched for a lot of materials before understanding how to achieve this in Javascript
       </p>
       <img src="Images/Difficult.png" alt="expand/collapse" >
 
-      <p><mark>"const design = document.querySelectorAll('.design');"</mark>This means to select the elements with "design" in the page
+      <p class="code-description"><mark>"const design = document.querySelectorAll('.design');"</mark>This means to select the elements with "design" in the page
         <br>
         <mark>"design.forEach(q => {"</mark>Observe the whole elements, and express them as <mark>"q"</mark>
         <br>
@@ -52,19 +54,19 @@
         controlling whether the display status of the "answer" section is on or off</p>
 
         <br>
-        <p>Also, there is another difficult problem I should solve, which is the animation
+        <p class="code-description">Also, there is another difficult problem I should solve, which is the animation
             <br>
             By learning how to build some animation online, I know how to do that</p>
             <img src="Images/anipro1.png" alt="process1">
-            <p>First we meed to define the animation, such as the time it moves and the initial point and the final point</p>
+            <p class="code-description">First we meed to define the animation, such as the time it moves and the initial point and the final point</p>
             <img src="Images/aniprocess2.png" alt="process2">
-            <p>Then we need to put the fadeinup animation into the body part</p>
+            <p class="code-description">Then we need to put the fadeinup animation into the body part</p>
 
     </section>
   
 
     <section class="curtain">
-        <h2 onmouseover="highlight(this)" onmouseout="removeHighlight(this)"> What I Learned</h2>
+        <h2> What I Learned</h2>
       <ul>
         <li>How to organize content in HTML and style it with CSS.</li>
         <li>How to apply responsive design using media queries.</li>
@@ -72,6 +74,7 @@
         <li>How animations can improve user experience.</li>
       </ul>
       <script src="Javascript.js"></script>
+      <button onclick="scrollToTop()" id="backToTopBtn" title="back to the top">↑</button>
     </section>
   </main>
   </body>
