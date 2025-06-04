@@ -67,8 +67,13 @@
     </section>
 
   </main>
-  <script src="javascript.js" defer></script>
-  <audio id="bg-music" src="music/BackgroundMusic.mp3" loop></audio>
+   <script> document.addEventListener('click', function () {
+    const audio = document.getElementById('bg-music');
+    audio.play();
+  }, { once: true }); 
+  </script>
+    <audio id="bg-music" src="music/BackgroundMusic.mp3" loop></audio>
+    <script src="javascript.js" defer></script>
   <button onclick="scrollToTop()" id="backToTopBtn" title="back to the top">↑</button>
 </body>
 </html>
