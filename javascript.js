@@ -25,3 +25,8 @@ function scrollToTop() {
     document.getElementById('feedback-thankyou').style.display = 'block';
   });
 
+/*Define the background music*/
+  document.addEventListener('click', function () {
+      const audio = document.getElementById('bg-music');
+      audio.play();
+    }, { once: true }); 
