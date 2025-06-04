@@ -20,6 +20,12 @@
       </div>
     <img src="Images/Photo1.jpg" alt="My wechat head portrait" />
     </nav>
+    <nav class="sub-nav">
+      <ul>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#hobbies">My hobbies and projects</a></li>
+      </ul>
+    </nav>
   </header>
 
   <div class="backgroundphoto"></div>
@@ -61,7 +67,13 @@
     </section>
 
   </main>
-  <script src="javascript.js"></script>
+  <audio id="bg-music" src="music/BackgroundMusic.mp3" loop></audio>
+  <script>
+    document.addEventListener('click', function () {
+      const audio = document.getElementById('bg-music');
+      audio.play();
+    }, { once: true }); 
+  </script>
   <button onclick="scrollToTop()" id="backToTopBtn" title="back to the top">↑</button>
 </body>
 </html>

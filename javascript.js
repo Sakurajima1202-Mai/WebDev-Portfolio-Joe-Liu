@@ -24,3 +24,4 @@ function scrollToTop() {
     document.getElementById('feedback-form').reset();
     document.getElementById('feedback-thankyou').style.display = 'block';
   });
+

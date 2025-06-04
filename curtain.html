@@ -20,10 +20,19 @@
       </div>
     <img src="Images/Photo1.jpg" alt="My wechat head portrait" />
     </nav>
+
+    <nav class="sub-nav">
+      <ul>
+        <li><a href="#mycode">My Code</a></li>
+        <li><a href="#challenges">Challenges</a></li>
+        <li><a href="#tools">Tools</a></li>
+        <li><a href="#reflection">Reflection</a></li>
+      </ul>
+    </nav>
   </header>
 
   <main>
-    <section>
+    <section id="mycode">
         <h2> My Code</h2>
       <p>
         Click here to go to my repository and see the whole code👇
@@ -33,46 +42,62 @@
       </button>
     </section>
   
-    <section class="curtain">
+    <section  id="challenges" class="curtain">
         <h2> Challenges I Faced</h2>
       <p class="code-description">
-        The most difficult coding challenge I encountered occurred in the part of design thinking. When I was coding, I found that 
+        <b>1.</b> The most difficult coding challenge I encountered occurred in the part of design thinking. When I was coding, I found that 
         it was very difficult to achieve the effect of "expand/collapse". 
-        I searched for a lot of materials before understanding how to achieve this in Javascript
-      </p>
+        I searched for a lot of materials before understanding how to achieve this in Javascript</p>
       <img src="Images/Difficult.png" alt="expand/collapse" >
+        <br>
+        <ul class="code-description">
+        <li><mark>"const design = document.querySelectorAll('.design');"</mark>This means to select the elements with "design" in the page</li>
+        <br>
+        <li><mark>"design.forEach(q => {"</mark>Observe the whole elements, and express them as <mark>"q"</mark></li>
+        <br>
+        <li><mark>"q.addEventListener('click', () => {"</mark>If the mouse clicks on this element, the subsequent content will be triggered</li>
+        <br>
+        <li><mark>"const answer = q.nextElementSibling;</mark>The triggered content is <mark>"answer"</mark>.</li>
+        <br>
+        <li><mark>"answer.style.display = (answer.style.display === 'block') ? 'none' : 'block';"</mark>This piece of code is like a "switch", 
+        controlling whether the display status of the "answer" section is on or off</li></ul>
 
-      <p class="code-description"><mark>"const design = document.querySelectorAll('.design');"</mark>This means to select the elements with "design" in the page
         <br>
-        <mark>"design.forEach(q => {"</mark>Observe the whole elements, and express them as <mark>"q"</mark>
-        <br>
-        <mark>"q.addEventListener('click', () => {"</mark>If the mouse clicks on this element, the subsequent content will be triggered
-        <br>
-        <mark>"const answer = q.nextElementSibling;</mark>The triggered content is <mark>"answer"</mark>.
-        <br>
-        <mark>"answer.style.display = (answer.style.display === 'block') ? 'none' : 'block';"</mark>This piece of code is like a "switch", 
-        controlling whether the display status of the "answer" section is on or off</p>
-
-        <br>
-        <p class="code-description">Also, there is another difficult problem I should solve, which is the animation
+        <p class="code-description"><b>2.</b> Also, there is another difficult problem I should solve, which is the animation
             <br>
-            By learning how to build some animation online, I know how to do that</p>
+            By learning how to build some animation online, I know how to do that
             <img src="Images/anipro1.png" alt="process1">
-            <p class="code-description">First we meed to define the animation, such as the time it moves and the initial point and the final point</p>
+            <br>
+            First we meed to define the animation, such as the time it moves and the initial point and the final point
             <img src="Images/aniprocess2.png" alt="process2">
-            <p class="code-description">Then we need to put the fadeinup animation into the body part</p>
+            <br>
+           Then we need to put the fadeinup animation into the body part</p>
 
     </section>
+
+    <section class="curtain" id="tools">
+      <h2> Developer Tools</h2>
+      <p class="code-description"><b>1.</b> The most useful tool will be: "live server", which can help me to play the background music.
+      <img src="Images/Live server.png" alt="Live Server">
+      <br>
+      Due to the factor that music cannot be played directly in VS Code, the use of live server has largely helped me solve this difficult problem</p>
+  </section>
   
 
-    <section class="curtain">
-        <h2> What I Learned</h2>
-      <ul>
-        <li>How to organize content in HTML and style it with CSS.</li>
-        <li>How to apply responsive design using media queries.</li>
-        <li>How to debug layout and script issues using DevTools.</li>
-        <li>How animations can improve user experience.</li>
-      </ul>
+    <section class="curtain"  id="reflection">
+        <h2> Reflection</h2>
+        <p class="code-description"> During the process of establishing this website, I faced many difficulties and challenges.
+          In the initial stage of dealing with HTML, CSS and JavaScript, I didn’t connect the external CSS files to HTML correctly. This made me feel really confused because although I changed the styles in the CSS file, 
+          there seemed to be no changes on the web page. Finally, I realized that I had forgotten to link the CSS file in the HTML head section. Once I corrected this mistake, everything was as I expected.
+          The biggest challenge in the process of building a website is how to express my ideas through code. 
+          I often have creative ideas about the appearance or function of a page, but I don't know how to write the correct grammar to implement them. Through trial and error and continuous learning, I gradually overcame these difficulties.
+          For example, I want to add the expand/hide function to some text parts. However, I don't know how to write it in JavaScript. 
+          After searching online, reading tutorials and seeking help from AI tools, I finally understood how to use these functions. And then I tried to code. Finally, although I still experienced a lot of failure, 
+          I got the thing I wanted. This experience taught me the importance of problem-solving, how to use developer tools, and the help of online resources.
+          In addition, I have learned how to make my website more interactive by using the animation. Using methods such as "button" can effectively keep the connection between web pages and readers
+          Establishing this website has taught me a lot. I have learned how to correct mistakes, such as linking CSS to HTML, 
+          and how to make ideas into code. Some parts are difficult to make, such as hiding and showing text with JavaScript, but I solved this problem with the help of online tools and learning. I also learned to use animations and make websites responsive.
+          This project helped me improve my coding skills and gave me more confidence.</p>
     </section>
   </main>
   <script src="javascript.js"></script>
